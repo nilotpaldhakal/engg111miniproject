@@ -40,8 +40,8 @@ void levelone()
         printf("Enter the value of den in kilograms per cubic metre\n");
         scanf("%f",&den);
         P1=P1*1000;
-        P2=P1+0.5*den*(v1*v1-v2*v2)+den*g*(h1-h2);
-        printf("The pressure in the pipes is %f KPa\n3",P2*0.001);
+        P2=(P1+(0.5*den*(v1*v1)-(v2*v2))+den*g*(h1-h2))/1000;
+        printf("The pressure in the pipes is %f KPa\n",P2*0.001);
     }
 void leveltwo()
     {
@@ -86,7 +86,7 @@ void leveltwo()
         printf("Enter the value of den in kilograms per cubic metre\n");
         scanf("%f",&den);
         P1=P1*1000;
-        P2=P1+0.5*den*(v1a*v1a+v1b*v1b-v2*v2)+den*g*(h1-h2);
+        P2=(P1+0.5*den*((v1a*v1a)+(v1b*v1b)-(v2*v2))+den*g*(h1-h2))/1000;
         printf("The pressure in the pipes is %f KPa\n",P2*0.001);
     }
 void levelthree()
@@ -112,8 +112,7 @@ void levelthree()
         scanf("%f",&v1a);
         printf("Enter the value of v1b in centimetres per second\n");
         scanf("%f",&v1b);
-        printf("Enter the value of d2 in centimetres\n");
-        printf("Enter the value of v2a in centimetres per squared meter\n");
+        printf("Enter the value of v2a in centimetres per second\n");
         scanf("%f",&v2a);
         d1a=d1a*0.01;
         d1b=d1b*0.01;
@@ -126,8 +125,8 @@ void levelthree()
         A2a=(pi*d2a*d2a)/4;
         A2b=(pi*d2b*d2b)/4;
         v2b=((na*(A1a*v1a)+nb*(A1b*v1b))/A2b)-A2a*v2a;
-        Q1=na*(A1a*v1a)+nb*(A1b*v1b);
-        Q2=A2a*v2a+A2b*v2b;
+        Q1=(na*(A1a*v1a))+(nb*(A1b*v1b));
+        Q2=(A2a*v2a)+(A2b*v2b);
         printf("The velocity of the wastewater in the main pipe is %f m/s.\nThe rate of flow in the drainage pipes is %f m^3/s and in the main pipe is %f m^3/s\n",v2a,Q1,Q2);
         printf("\nFor the second part:");
         printf("\nEnter the value of h1 in metres\n");
@@ -139,7 +138,7 @@ void levelthree()
         printf("Enter the value of den in kilograms per cubic metre\n");
         scanf("%f",&den);
         P1=P1*1000;
-        P2=P1+0.5*den*(v1a*v1a+v1b*v1b-v2a*v2a-v2b*v2b)+den*g*(h1-h2);
+        P2=(P1+(0.5*den*((v1a*v1a)+(v1b*v1b)-(v2a*v2a)-(v2b*v2b)))+(den*g*(h1-h2)))/1000;
         printf("The pressure in the pipes is %f KPa\n",P2*0.001);
     }
 int main()
