@@ -1,0 +1,27 @@
+1. START
+2. Get value of Lev
+3. If Lev is not equal to 1 & Lev is not equal to 2 &If Lev is not equal to
+3 then go to step 4, else go to step 5
+4. Print “Invalid entry” and go to step 2
+5. If lev is equal to 1 then go to step 6, else if lev is equal to 2 go to
+step 16 else if lev is equal to 3 go to step 27
+{}
+27.Declare na, nb, v1a, v1b, d1a, d1b,d2a,d2b,A1a,A1b,A2a,A2b,h1, h2, den,
+g=9.8, v2a, v2b, Q1, Q2, P2
+28.Get value of n1a, n1b, d1a, d1b, v1a, v1b, d2a, d2b, v2a
+29.A1a (3.14*d1a^2)/4
+30.A1b (3.14*d1b^2)/4
+31.A2a (3.14*d2a^2)/4
+32.A2b (3.14*d2b^2)/4
+33. v2b ((na(A1a*v1a)+nb(A1bv1b))/A2b)-A2a*v2a
+34.Q1 na*(A1a*v1a)+n1b*(A1b*v1b)
+35.Q2 A2a*v2a+A2b*v2b
+36.Get value of h1, h2, P1, den
+37.P2 P1+0.5*den*(v1a^2+v1b^2-v2a^2-v2b^2)+den*g*(h1-h2)
+38.Display v2, Q1, Q2, P2
+39.Declare yn
+40.Print “”
+41.If yn is equal to “y”, go to 2, else if yn is equal to “n” then go to Step 42,
+else Print “Invalid Entry” and go to Step 40
+42.Print “Thank You :)”
+43.STOP

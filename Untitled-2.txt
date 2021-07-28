@@ -1,0 +1,24 @@
+{6. Declare n1, d1, v1, Q1, Q2, A1, A2, h1, h2, den, g=9.8 & P1
+7. Get value of n1, d1, v1, d2
+8. A1 (3.14*d1^2)/4
+14
+9. A2 (3.14*d2^2)/4
+10.v2 (n1*A1*v1)/A2
+
+11.Q1 A1*v1
+12.Q2 A2*v2
+13.Get value of h1, h2, P1, den
+14.P2 P1+0.5*(v1^2-v2^2)+den*g*(h1-h2)
+15.Display v2, Q1, Q2, P2
+16.Declare na, nb, v1a, v1b, d1a, d1b,d2,A1a,A1b,A2,h1, h2, den, g=9.8, v2,
+Q1, Q2, P2
+17.Get value of n1a, n1b, d1a, d1b, v1a, v1b, d2
+18.A1a (3.14*d1a^2)/4
+19.A1b (3.14*d1b^2)/4
+20.A2 (3.14*d2^2)/4
+21. v2 (na(A1a*v1a)+nb(A1bv1b))/A2
+22.Q1 na*(A1a*v1a)+n1b*(A1b*v1b)
+23.Q2 A2*v2
+24.Get value of h1, h2, P1, den
+25.P2 P1+0.5*den*(v1a^2+v1b^2-v2^2)+den*g*(h1-h2)
+26.Display v2, Q1, Q2, P2}
